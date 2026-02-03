@@ -1,3 +1,8 @@
+router.post("/test", (req, res) => {
+  console.log("TEST API HIT:", req.body);
+  res.json({ message: "Frontend ↔ Backend connected ✅" });
+});
+
 const express = require("express");
 const Razorpay = require("razorpay");
 const Student = require("../models/Student");
